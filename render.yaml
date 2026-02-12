@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: practice-crud
+    env: docker
+    repo: ------------------------htfghssf
+    plan: free
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://postgres:5432/minnubaev_practice_db
+      - key: SPRING_DATASOURCE_USERNAME
+        value: postgres
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+
+databases:
+  - name: postgres
+    plan: free
